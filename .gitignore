@@ -1,0 +1,8 @@
+
+scripts/out/*
+venv
+
+# on time
+hdl/fifo.sv
+.svls.toml
+TODO.md
