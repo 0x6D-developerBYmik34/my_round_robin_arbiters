@@ -1,6 +1,10 @@
 
 scripts/out/*
 venv
+tb/sim_build
+sim_build
+scripts/__pycache__
+tb/__pycache__
 
 # on time
 hdl/fifo.sv

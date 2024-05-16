@@ -1,5 +1,5 @@
-module simple_rr_packet_arbiter #(
-    parameter REQUASTERS_QUANT = 2
+module packet_arbiter #(
+    parameter REQUASTERS_QUANT = 8
 ) (
     input clk,
     input rst,
@@ -44,7 +44,8 @@ module simple_rr_packet_arbiter #(
     // pointer update
     always_ff @(posedge clk or posedge rst)
         if (rst) calc_ptr <= 'b0;
-        else if(update_calc_ptr) calc_ptr <= new_ptr;
+        else if(update_calc_ptr) 
+            calc_ptr <= new_ptr;
 
     always_ff @(posedge clk or posedge rst)
         if (rst) ptr <= 'b0;

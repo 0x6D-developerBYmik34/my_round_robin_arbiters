@@ -1,5 +1,5 @@
 module simple_arbiter #(
-    parameter REQUASTERS_QUANT = 2
+    parameter REQUASTERS_QUANT = 8
 ) (
     input clk,
     input rst,

@@ -3,7 +3,7 @@ import subprocess
 
 
 SIMPLE_ARBITR_PATH = "../hdl/simple_arbiter.sv ../tb/tb_arbiter.sv"
-RR_PACKET_ARBITR_PATH = "../hdl/simple_rr_packet_arbiter.sv ../tb/tb_packet_arbiter.sv"
+RR_PACKET_ARBITR_PATH = "../hdl/packet_arbiter.sv ../tb/tb_packet_arbiter.sv"
 
 chooise_dict = {
         "-a": SIMPLE_ARBITR_PATH, 

@@ -9,7 +9,7 @@ module testbench;
     // Остальные сигналы (combs)
     logic [7:0] req, grants, req_is_last;
 
-    simple_rr_packet_arbiter #(8) dut (
+    packet_arbiter #(8) dut (
         .clk(clk), .rst(rst), .req(req), .req_is_last(req_is_last), .grants(grants)
     );
 
